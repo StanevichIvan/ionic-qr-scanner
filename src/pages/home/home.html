@@ -1,14 +1,10 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-list>
+    <ion-item text-center>Scan QR code</ion-item>
+    <ion-item text-center>Select photos to upload</ion-item>
+    <ion-item text-center>Upload photos</ion-item>
+  </ion-list>
+  <h4>{{barcodeData}}</h4>
+  <button ion-button (click)="scanQr()">Scan QR code</button>
+  <button ion-button (click)="goToFileUpload()">Make photos</button>
 </ion-content>
